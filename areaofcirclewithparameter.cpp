@@ -1,5 +1,5 @@
-//WAP to calculate area of circle using a written type function with parameter
-
+//WAP to calculate area of circle using a written type function with parameter with return type
+//with parameter with return type
 #include<stdio.h>
 float area(float);
 
@@ -20,5 +20,5 @@ float area(float r)
 	pie=3.14;
 	result=pie*r*r;
 	
-	return result;
+	return result;//return void
 }

@@ -1,25 +1,47 @@
-#include <stdio.h>
-#include <limits.h> // For INT_MAX
+#include<stdio.h>
+#include<string.h>
+#define MAX_EMPLOYEE 30;
 
+struct Employee{
+    int id;
+    char name[50];
+    float salary;
+    char address[50];
+
+}
 int main()
 {
-    int age[5] = {3, 63, 4, 8, 31};
-    int i, largest = INT_MIN, smallest = INT_MAX; // Initialize largest and smallest with extreme values
-    
-    for (i = 0; i < 5; i++)
-    {
-        if (age[i] > largest)
-        {
-            largest = age[i];
-        }
-        
-        if (age[i] < smallest)
-        {
-            smallest = age[i];
-        } 
-    }
-    printf("The greatest is: %d\n", largest);
-    printf("The smallest is: %d", smallest);
-    return 0;
-}
+    struct Employee employees[MAX_EMPLOYEE];
+    int i;
 
+    for(i=0;i<=MAX_EMPLOYEE;i++)
+    {
+        printf("Enter the detail of employee %d",i+1);
+        printf("Employee id:%d");
+        scanf("%d",&employees[i].id);
+        printf("\n");
+
+        printf("Employee name:%d");
+        scanf("%d",&employees[i].name);
+        printf("\n");
+        
+        printf("Employee salary:%d");
+        scanf("%d",&employees[i].salary);
+        printf("\n");
+        
+        printf("Employee address:%d");
+        scanf("%d",&employees[i].address);
+        printf("\n");
+        
+    }
+    
+    for(i=0;i<MAX_NUMBER;i++)
+    {
+    	if(strcmp(employees[i].address"pokhara")!==0)
+    	{
+    	printf("Employee name:%d",employees[i].name);
+		}
+	}
+	return 0;
+
+}
